@@ -1,0 +1,313 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.logo1{
+	margin-top: 20px;
+	margin-left: 40px;
+	float: left;
+	margin-bottom: -20px;
+	height: 100px;
+	width: 150px;
+}
+.logo{
+	float: left;
+	margin:15px 0 0 40px;
+	height: 150px;
+	width: 280px;
+}
+
+
+
+/*login*/
+
+.body{
+	padding: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom right, #14759e, white );
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#content-1{
+	background-color: #14759e;
+	height: 400px;
+	box-shadow: 0 3px 8px 0 grey;
+}
+
+#innercontent{
+	height: 50px;
+}
+#innercontent1{
+	margin-top: 40px;
+}
+#content{
+	color: white;
+	margin-top: 30px;
+	height: 90px;
+}
+
+#btnlogin{
+	padding-right: 25px;
+}
+
+#registerbtn{
+	margin-left: 15px;
+	background: white;
+	margin-top: -90px;
+ 	height: 400px;
+}
+
+#logincontent{
+	padding-left: 30px;
+}
+.textreg{
+	margin-top: 150px;
+	color: #14759e;
+}
+#btn{
+	margin-top: 10px;
+}
+
+.indexheader{
+	height: 60px;
+	background: #14759e;
+}
+.indexfooter{
+	height: 40px;
+	background: #14759e;
+	margin-top: auto;
+}
+.ftext{
+	margin-top: 5px;
+	font-size: 12px;
+	color: white;
+}
+
+/*admin*/
+#login1{
+	height: 300px;
+}
+.img{
+	margin-left: 65px;
+	width: 240px;
+	height: 150px;
+}
+#heading{
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+}
+#adminlogin{
+	margin-top: 10px;
+}
+
+/*end*/
+
+/*dashboard*/
+.dashlogo{
+	height: 80px;
+	width: 130px;
+	margin-top: -10px;
+}
+.username{
+	font-size: 25px;
+	font-weight: lighter;
+	color: #14759e;
+	cursor: pointer;
+}
+.username:hover{
+	text-decoration: none;
+	color: #14759e;
+}
+
+/*dashboard end*/
+.reglogo{
+	margin-left: 60px;
+	margin-top: -100px;
+	height: 180px;
+	width: 240px;
+}
+#iconprof{
+	margin-left: 40px;
+	float: left;
+	color: #14759e;
+	margin-top: 8px;
+}
+/*attorney*/
+#tabletitle{
+	color: #14759e;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+#tabletitle1{
+	color: #14759e;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+#contenttable{
+	padding: 20px;
+}
+
+#indexdesc{
+	display: flex;
+	justify-content: center;
+	color: #14759e;
+
+}
+#indexcontainer{
+	margin-top: 20px;
+}
+#seemore{
+	text-decoration: none;
+	font-size: 50px;
+}
+
+#seemore:hover{
+	
+}
+#seemoreicon{
+	margin-left: 5px;
+	transition: 0.7s;
+}
+#seemoreicon:hover{
+	transition: 0.5s;
+	transform: scale(1.5);
+}
+
+#book{
+	color: #14759e;
+}
+
+#resetbtn:focus{
+	outline: none;
+}
+/*Mobile View*/
+
+@media only screen and (max-width:800px){
+.logo{
+	float: left;
+	margin:15px 0 0 40px;
+	height: 150px;
+	width: 270px;
+}
+
+#btnmenu{
+	display: inline;
+}
+.uiheader{
+	display: none;
+}
+#uicontainer{
+	margin-top: 3px;
+	border-radius: 0;
+}
+#uilogo{
+	margin-left: 60px;
+}
+#uiname{
+	padding: 15px 0 0 65px;
+}
+#uisearch{
+	margin-left:70px;
+}
+#btnmenu .uibtn{
+	padding-left: 80px;
+	font-size: 12px;
+}
+#uinav{
+	margin-top: -20px;
+	border-radius: 0;
+	height: 500px;
+}
+.right-content{
+	background-color: white;
+	height: 500px;
+	border-radius:0; 
+	margin-top: 1px;
+}
+.body{
+	padding: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom right, #14759e, white );
+	display: flex;
+	flex-direction: column;
+	min-height: 120vh;
+}
+.container{
+	margin-top: 50px;
+	border-radius: 1px;
+	width: 350px;
+}
+
+#form-margin{
+	margin-left:10px;
+}
+
+.space{
+	margin-top: 15px;
+}
+.text-1{
+	padding: 1px 5px 6px 15px;
+}
+
+.ftext{
+	margin-left: 105px;
+	margin-top: 25px;
+	justify-content: center
+	font-size: 12px;
+	color: #14759e;
+}
+
+.indexfooter{
+	position: sticky;
+	width: 100%;
+	margin-top: 190px;
+	height: 60px;
+	background: transparent;
+}
+#content-1{
+	margin-top: -1px;
+	width: 100%;
+}
+
+#innercontent{
+	width: 100%;
+	margin-top:  -60px;
+	height: 200px;
+}
+#logincontent{
+	width: 100%;
+	margin-left: -10px;
+	margin-top: -70px;
+	position: absolute;
+}
+#registerbtn{
+	margin-top: 120px;
+	margin-left: -1px;
+	height: 60px;
+	background: transparent;
+	border: none;
+}
+
+#content{
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+.textreg{
+	margin-top: 140px;
+}
+
+#btn{
+	margin-top: -2px;
+}
+#results{
+	width: 50vh;
+}
+/*mobile view end*/
