@@ -1,0 +1,25 @@
+Domain login
+Email:pedro.juan42069@gmail.com
+Pass: juanpedro42069
+
+Sms API creds
+api code: TR-STUDE423049_K6UIA
+password: ga)zk8$2})
+
+Website link: opass.epizy.com
+
+- FTP Creds: 
+ * username: epiz_30390914
+ * password: STOFVDEmdWDthvI
+ * host name: ftpupload.net
+ * port: 21
+
+- Website file manager
+ * username: epiz_30390914
+ * password: STOFVDEmdWDthvI
+
+- Website SQL
+ * username: epiz_30390914
+ * password: STOFVDEmdWDthvI
+ * host name: sql113.epizy.com
+ * db name: epiz_30390914_opass

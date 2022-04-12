@@ -93,6 +93,7 @@ $user_data = check_login($connect);
 		</div>
 		<!--/.row-->
 		<div class="row">
+        <?php #print_r($_SESSION) ?>
 			<div class="panel panel-container col-md-10 col-md-offset-1" style="box-shadow: 0 4px 20px 0 #a8a6a6;">
 				<div class="row">
 					<div class="col-xs-6 col-md-3 no-padding">

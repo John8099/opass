@@ -18,7 +18,7 @@ $user_data = check_login($connect);
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OPASS-HOME</title>
-
+  
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -134,6 +134,7 @@ $user_data = check_login($connect);
 
 	</div>
 	<!--/.main-->
+
 
 </body>
 

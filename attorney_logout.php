@@ -5,8 +5,8 @@ session_start();
 if (isset($_SESSION['attorney_ID'])) 
 {
 	// session_unset($_SESSION['attorney_ID']);
-	unset($_SESSION['attorney_ID']);
-
+	// unset($_SESSION['attorney_ID']);
+    session_unset();
 	session_destroy();
 }
 

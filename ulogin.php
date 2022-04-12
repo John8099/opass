@@ -5,23 +5,23 @@ session_start();
 include("connection.php");
 include("functionSmsEmail.php");
 
-if (isset($_POST['Username'])) {
+if (isset($_GET["login"])) {
 	$uname = $_POST['Username'];
 	$pass = $_POST['Password'];
 
 	$query = "SELECT * FROM `user` WHERE Username = '$uname'";
 	$result = mysqli_query($connect, $query);
 
-	if ($result && mysqli_num_rows($result) > 0) {
+	if (mysqli_num_rows($result) > 0) {
 		$user_data = mysqli_fetch_assoc($result);
 		$db_password = $user_data['Password'];
-		$verify_password = password_verify($pass, $db_password);
-		if ($verify_password == true) {
+		// $verify_password = password_verify($pass, $db_password);
+		if (password_verify($pass, $db_password)) {
 			$_SESSION['Client_ID'] = $user_data['Client_ID'];
 			$_SESSION['isClient'] = true;
 			$otp = generateOTP($connect);
 			$numbers = getValidNumbers([$user_data['c_number']]);
-			if (count($numbers) > 0 && isValidEmail($user_data['email'])) {
+			if (count($numbers) > 0 && isValidEmail($user_data['c_email'])) {
 				$msg = "Your OTP code is: $otp";
 				$sendSms = sendSms($numbers[0], $msg);
 				$sendEmail = sendEmail($user_data['c_email'], $msg);
@@ -67,7 +67,7 @@ if (isset($_POST['Username'])) {
 				</div>
 				<div class="row" id="innercontent1">
 					<div class="col-md-6" id="logincontent">
-						<form class="form-horizontal" action="" method="post">
+						<form class="form-horizontal" action="?login" method="POST">
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-2 control-label" style="color: white;">Username:</label>
 								<div class="col-sm-10">

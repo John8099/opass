@@ -6,6 +6,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
 include("connection.php");
 include("functionSmsEmail.php");
+date_default_timezone_set("Asia/Manila");
+
 
 $id = '';
 $todotitle = '';
@@ -193,7 +195,7 @@ if (isset($_POST['sendbtn'])) {
 				} else {
 					$date = ucwords(date("F d, Y", strtotime($request_f->Appointment_date)));
 				}
-				$message = "Your Appointment on $date was cancelled";
+				$message = "Your Appointment on $request_f->Appointment_date $request_f->Appointment_Time was cancelled";
 			}
 
 			if ($request_f->email != "" && isValidEmail($request_f->email)) {
@@ -278,7 +280,7 @@ if (isset($_POST['acceptapp'])) {
 				} else {
 					$date = ucwords(date("F d, Y", strtotime($request_f->Appointment_date)));
 				}
-				$message = "Your Appointment on $date was accepted";
+				$message = "Your Appointment on $request_f->Appointment_date $request_f->Appointment_Time was accepted";
 			}
 
 			if ($request_f->email != "" && isValidEmail($request_f->email)) {

@@ -209,7 +209,7 @@ $user_data = check_login($connect);
 
 												<div class="type_msg" style=" position: absolute; bottom: 0; width: 93%">
 													<div class="input_msg_write">
-														<form action="atty-chat.php" method="POST" enctype="multipart/form-data">
+														<form action="attyChat.php" method="POST" enctype="multipart/form-data">
 															<input type="text" name="clientId" value="<?php echo $rows['Client_ID'] ?>" readonly hidden>
 															<div class="attach_file" id="divAttach<?php echo $rows['Request_ID'] ?>" style="display: none;">
 																<input type="file" name="attachedFile" id="inputAttachedFile<?php echo $rows['Request_ID'] ?>">

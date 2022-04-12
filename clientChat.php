@@ -18,18 +18,18 @@ if ($chat != "" || $attachedFile['name'] != "") {
       mkdir("media", 0777, true);
     }
     if (move_uploaded_file($attachedFile['tmp_name'], "media/$uploadfile")) {
-      $sql = mysqli_query($connect, "INSERT chat(sender_id, send_to, content) VALUES('$sender', '$sendTo', '$encryptFile')");
+      $sql = mysqli_query($connect, "INSERT chat(sender_id, send_to, content, sender_type) VALUES('$sender', '$sendTo', '$encryptFile','user')");
     }
   }
   if ($chat != "") {
     $encryptChat = encrypt_decrypt($_POST['chat'], 'encrypt');
-    $sql = mysqli_query($connect, "INSERT chat(sender_id, send_to, content) VALUES('$sender', '$sendTo', '$encryptChat')");
+    $sql = mysqli_query($connect, "INSERT chat(sender_id, send_to, content, sender_type) VALUES('$sender', '$sendTo', '$encryptChat', 'user')");
   }
 }
 
 if ($sql) {
   echo "<script>
-        window.location.href = 'user_inbox.php?changeSession&&val=$sendTo'
+        window.location.href = 'user_inbox.php?user_id=$sendTo'
     </script>";
 } else {
   echo "<script>
