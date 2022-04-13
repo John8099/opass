@@ -102,7 +102,7 @@ $user_data = check_login($connect);
 
 		<div class="row panel panel-blue col-md-11 col-xs-11" style="margin: 10px;"><br>
 			<div class="holder col-md-4">
-				<img src="<?php echo $user_data['profile'] ?>"  style=" height: 280px; width: 245px;">
+				<img src="<?php echo $row['profile'] ?>"  style=" height: 280px; width: 245px;">
 			</div>
 			<div class="col-md-4">
 				<h4 class="panel panel-teal" style="color: white; padding: 10px;">&emsp;Atty.&nbsp;<?php echo $row['firstname']; ?> &nbsp;<?php echo $row['lastname']; ?></h4>
